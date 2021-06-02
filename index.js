@@ -1,15 +1,17 @@
-const {ApolloServer} = require('apollo-server');
+const {ApolloServer, PubSub} = require('apollo-server');
 const mongoose = require('mongoose');
 const {MONGODB} = require('./config.js');
 
 const resolvers = require('./graphql/resolvers');
 const typeDefs = require('./graphql/typeDefs');
 
-
+const pubsub = new PubSub();
 
 const server = new ApolloServer({
     typeDefs,
-    resolvers
+    resolvers,
+    context: ({req})=>({req}) 
+    //passes the req body through context hence it could be used by other routes
 });
 
 
