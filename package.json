@@ -14,8 +14,13 @@
     "apollo-server": "^2.25.0",
     "bcryptjs": "^2.4.3",
     "graphql": "^15.5.0",
+    "graphql-tag": "^2.12.4",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.12"
+    "jwt-decode": "^3.1.2",
+    "mongoose": "^5.12.12",
+    "react-router-dom": "^5.2.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3"
   },
   "devDependencies": {
     "nodemon": "1.19.1"
