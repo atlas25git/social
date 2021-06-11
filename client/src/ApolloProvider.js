@@ -30,3 +30,6 @@ export default (
     <App />
   </ApolloProvider>
 );
+
+// 1234567890-=` qwertyuiop[]\`ASDFGHJKL;'
+// zxXCVBNM,./ 
